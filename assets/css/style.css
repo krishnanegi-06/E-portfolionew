@@ -1,0 +1,166 @@
+/* Custom e-portfolio CSS */
+
+:root {
+    --bg: #0f1724;
+    --panel: #111827;
+    --accent: #00d4ff;
+    --muted: #9aa4b2;
+    --glass: rgba(255, 255, 255, 0.04);
+    font-family: Inter, Segoe UI, Roboto, Helvetica, Arial;
+}
+
+* {
+    box-sizing: border-box
+}
+
+body {
+    margin: 0;
+    background: var(--bg);
+    color: #e6f7ff
+}
+
+a {
+    color: var(--accent);
+    text-decoration: none
+}
+
+.container {
+    max-width: 1000px;
+    margin: 28px auto;
+    padding: 20px
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 24px;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.02), transparent);
+    backdrop-filter: blur(6px);
+    border-radius: 10px
+}
+
+.brand {
+    display: flex;
+    gap: 12px;
+    align-items: center
+}
+
+.logo {
+    width: 56px;
+    height: 56px;
+    border-radius: 8px;
+    background: linear-gradient(135deg, #7b61ff, #00fff0);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 700;
+    color: #021
+}
+
+.nav a {
+    margin-left: 12px;
+    padding: 8px 10px;
+    border-radius: 6px;
+    background: transparent
+}
+
+.hero {
+    margin-top: 20px;
+    padding: 28px;
+    border-radius: 12px;
+    background: var(--glass);
+    position: relative;
+    overflow: hidden
+}
+
+.hero h1 {
+    margin: 0;
+    font-size: 2rem;
+    letter-spacing: 0.4px
+}
+
+.hero p.lead {
+    color: var(--muted);
+    max-width: 75%
+}
+.hero h1 {
+    font-weight: 700;
+    color: #00d4ff; /* accent color for neon effect */
+}
+.hero p.lead {
+    font-weight: 600;
+    color: #ffffffcc; /* semi-bright for readability */
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 18px;
+    margin-top: 18px
+}
+
+.card {
+    background: rgba(255, 255, 255, 0.02);
+    padding: 16px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.02)
+}
+
+footer {
+    margin-top: 28px;
+    text-align: center;
+    color: var(--muted)
+}
+
+/* Responsive */
+
+@media (max-width:880px) {
+    .grid {
+        grid-template-columns: 1fr
+    }
+    .hero p.lead {
+        max-width: 100%
+    }
+}
+
+/* backgrounds */
+
+.bg-college {
+    position: absolute;
+    right: 0;
+    top: 0;
+    opacity: 0.58;
+    width: 60%;
+    height: 100%;
+    pointer-events: none
+}
+
+.bg-computer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    opacity: 0.12;
+    width: 50%;
+    height: 100%;
+    pointer-events: none
+}
+
+.project-illustration {
+    width: 50%;
+    height: 220px;
+    background: linear-gradient(135deg, rgba(0, 212, 255, 0.06), rgba(123, 97, 255, 0.04));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px
+}
+
+.code-snippet {
+    background: #071229;
+    padding: 12px;
+    border-radius: 8px;
+    color: #bfefff;
+    overflow: auto;
+    font-family: monospace;
+    font-size: 0.9rem
+}
