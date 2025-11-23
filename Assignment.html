@@ -3,42 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Assignments</title>
-    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Assignment Videos</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: #f3f3f3;
+            margin: 0;
+            padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            margin-bottom: 40px;
+            color: #222;
+        }
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 30px;
+            padding: 10px;
+        }
+        .card {
+            background: white;
+            border-radius: 10px;
+            padding: 20px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.15);
+            text-align: center;
+        }
+        h2 {
+            margin-bottom: 15px;
+            font-size: 22px;
+            color: #444;
+        }
+        video {
+            width: 100%;
+            border-radius: 10px;
+        }
+    </style>
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="Assignment.html" class="active">Introduction</a>
-        </nav>
-    </header>
 
-    <main>
-        <section>
-           <h2>Assignment 1</h2>
-<video width="360" controls>
-    <source src="https://drive.google.com/uc?export=download&id=1YtamoETb3vT_gmzKI2UUQUxsN8UxfPm-" type="video/mp4">
-</video>
+    <h1>Assignment Video Submissions</h1>
 
+    <div class="container">
 
-            <h2>Assignment 2</h2>
-            <video width="360" controls>
-                <source src=https://drive.google.com/file/d/14VD3EvPuOE8bG-gitTjhQb4h_nOntQfj/" type="video/mp4">
+        <div class="card">
+            <h2>Introduction</h2>
+            <video controls>
+                <source src="https://drive.google.com/uc?export=download&id=14VD3EvPuOE8bG-gitTjhQb4h_nOntQfj" type="video/mp4">
             </video>
+        </div>
 
-            <h2>Assignment 3</h2>
-            <video width="360" controls>
+        <div class="card">
+            <h2>SWOC</h2>
+            <video controls>
+                <source src="https://drive.google.com/uc?export=download&id=1YtamoETb3vT_gmzKI2UUQUxsN8UxfPm-" type="video/mp4">
+            </video>
+        </div>
+
+        <div class="card">
+            <h2>AI</h2>
+            <video controls>
                 <source src="https://drive.google.com/uc?export=download&id=1warimam3XoZkZeB32BsSzWrKmQu8i9Qq" type="video/mp4">
             </video>
+        </div>
 
-            <h2>Assignment 4</h2>
-            <video width="360" controls>
+        <div class="card">
+            <h2>Role Play</h2>
+            <video controls>
                 <source src="https://drive.google.com/uc?export=download&id=1JvY-2WHL9OM34_kR_273eQpDcLNWlSbB" type="video/mp4">
             </video>
-        </section>
-    </main>
+        </div>
+
+    </div>
+
 </body>
 </html>
-
-
