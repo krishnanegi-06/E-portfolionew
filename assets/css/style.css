@@ -164,3 +164,74 @@ footer {
     font-family: monospace;
     font-size: 0.9rem
 }
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+header {
+    background: #222;
+    padding: 15px 0;
+}
+
+nav {
+    text-align: center;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin: 0 20px;
+    font-size: 18px;
+    padding-bottom: 3px;
+}
+
+nav a.active, nav a:hover {
+    border-bottom: 2px solid #fff;
+}
+
+/* Main Section */
+main {
+    width: 90%;
+    max-width: 900px;
+    margin: 30px auto;
+}
+
+h2 {
+    margin: 20px 0 10px;
+    color: #333;
+    font-size: 22px;
+    text-align: center;
+}
+
+/* Videos */
+video {
+    width: 100%;
+    max-width: 600px;
+    display: block;
+    margin: 0 auto 25px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+}
+
+/* Section Layout */
+section {
+    padding-bottom: 40px;
+}
+
+/* Mobile Responsive */
+@media (max-width: 600px) {
+    nav a {
+        display: inline-block;
+        margin: 10px;
+        font-size: 16px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+}
